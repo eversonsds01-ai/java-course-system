@@ -4,15 +4,14 @@ public class Systemcourse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int senha;
-        int opcoes;
-        int dadosOpcoes;
+        System.out.println("Digite seu nome: ");
+        String nome = scanner.nextLine();
 
-        System.out.println("Cadastre sua senha: ");
+        System.out.println("Olá " + nome + " Cadastre sua senha: ");
         int senhaCadastro = scanner.nextInt();
 
         System.out.println("Senha cadastrada. Digite sua senha!");
-        senha = scanner.nextInt();
+        int senha = scanner.nextInt();
 
         while (senhaCadastro != senha) {
             System.out.println("Senha errada, tente novamente: ");
@@ -25,7 +24,7 @@ public class Systemcourse {
             System.out.println("1 - Python");
             System.out.println("2 - Java");
             System.out.println("3 - (Faculdade)Engenharia de software");
-            opcoes = scanner.nextInt();
+            int opcoes = scanner.nextInt();
 
 
                 switch (opcoes) {
@@ -46,7 +45,7 @@ public class Systemcourse {
         System.out.println("1 - Começar o curso/faculdade");
         System.out.println("2 - Ver dados do curso/faculdade");
         System.out.println("3 - Terminar por hoje");
-        dadosOpcoes = scanner.nextInt();
+        int dadosOpcoes = scanner.nextInt();
 
         if (opcoes == 1){
             switch (dadosOpcoes){
@@ -79,7 +78,7 @@ public class Systemcourse {
                     break;
 
                 case 2:
-                    System.out.println("Dados do curso de Engenharia de Software: ");
+                    System.out.println("Dados da faculdade Engenharia de Software: ");
                     System.out.println("Engenharia de Software:\nDuração: 4 anos (faculdade)\nConteúdo: algoritmos, testes, projetos grandes\nNível: intermediário a avançado");
                     break;
                 case 3:
